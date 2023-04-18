@@ -22,7 +22,7 @@ The AI follows [this guide.](https://sundrop.kvdk.net/files/SundropArtGuide.pdf)
 
 # IMPORTANT
 
-I have tested it a bit and I **can't tell** if the AI can generate **proper palettes** for everything. It's not working bad for hair though. The AI often creates **imperfect** palettes, means you most likely have to recreate it a bit. Even though it sometimes might work, it's still important to **not completely rely on it**.  
+I have tested it a bit and I **can't tell** if the AI can generate **proper palettes** for everything. The AI often creates **imperfect** palettes, means you most likely have to recreate it a few times. Even though it sometimes might work, it's still important to **not completely rely on it**.  
 
 Generally, it's just better to **create** your **own palettes**. This project was just made out of boredom.
 
