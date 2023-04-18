@@ -71,9 +71,13 @@ guide = get_sundrop_guide()
 while True:
     completion = openai.Completion.create(max_tokens=800, 
                                         engine="text-davinci-003", 
-                                        prompt= "Please read the following guide:\n" + guide + 
-                                        ". Make sure you apply the rules, especially hue shifting and high saturation. Now, by following the guide, create a pixel art palette which can be used to draw this: " + prompt 
-                                        + ". Don't give me a different color when I ask for a specific one. Please give me the result as a python list with rgb values as tuples. Please don't add any comments.") # CHANGING THE PROMPT CAN RESULT IN AN INFINITE LOOP !
+                                        prompt= f"""Please read the following guide:\n {guide}
+                                        \nMake sure you apply the rules, especially hue shifting and high saturation. 
+                                        Now, by following the guide, create a pixel art palette which can be used to draw this: {prompt}. 
+                                        Don't give me a different color when I ask for a specific one. 
+                                        Please give me the result as a python list with rgb values as tuples. 
+                                        Please don't add any comments.""") # CHANGING THE PROMPT CAN RESULT IN AN INFINITE LOOP !
+    
     response = completion.choices[0].text
 
     colors = get_color_list(response)
