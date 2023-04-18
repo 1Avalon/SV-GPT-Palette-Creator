@@ -68,8 +68,7 @@ scale = int(input("Please enter the scale of each color of the palette: "))
 palette_name = prompt.replace(" ", "_")
 guide = get_sundrop_guide()
 
-satisfied = False
-while not satisfied:
+while True:
     completion = openai.Completion.create(max_tokens=800, 
                                         engine="text-davinci-003", 
                                         prompt= "Please read the following guide:\n" + guide + 
@@ -88,8 +87,5 @@ while not satisfied:
     
     create_palette(color_list, scale, palette_name)
 
-    satisfaction = input('Redo? (y/n): ')
-
-    if satisfaction == 'n':
-        satisfied = True
+    input('Hit enter to recreate the palette')
     
