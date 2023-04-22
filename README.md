@@ -1,4 +1,4 @@
-# SV-GPT-Pallette-Creator
+# SV-GPT-Palette-Creator
 
 Uses **ChatGPT** to create pixel art palettes based on Stardew Valley's (ConcernedApe's) art style!
 
